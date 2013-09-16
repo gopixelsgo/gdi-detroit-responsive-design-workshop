@@ -1,0 +1,10 @@
+.large-12 h2.main {
+	height: auto;
+	width: 100%;
+	margin:0;
+	background-color: #004488;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom: lightblue 3px solid;
+}
+

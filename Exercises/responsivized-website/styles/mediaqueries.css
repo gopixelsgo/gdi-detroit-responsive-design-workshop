@@ -1,0 +1,68 @@
+/* tablets and desktop */
+@media only screen and (min-width: 768px) {
+   
+	/*  add your css here! */
+	
+
+
+	
+
+} /* <--- this closing curly bracket belongs to the media query. make sure to leave it there :-) */
+
+
+/* phones - landscape orientation */
+@media only screen and (max-width: 767px) {
+   
+   /*  add your css here! */
+   #gallery {
+   		width: 100%;
+   		clear: both;
+   }
+
+   aside {
+   		width: 100%;
+   		clear: both;
+   	}
+
+
+} /* don't delete me!!!!! */
+
+
+/* phones - portrait orientation */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+ 
+	/*  add your css here! */
+	#gallery {
+   		width: 100%;
+   		clear: both;
+   }
+
+   aside {
+   		width: 100%;
+   		clear: both;
+   	}
+
+   	#thumbs li img {
+   		width: 100%;
+   	}
+
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape) {
+
+	#gallery {
+   		width: 100%;
+   		clear: both;
+   }
+
+   aside {
+   		width: 90%;
+   		clear: both;
+   		margin: 0 auto;
+   	}
+
+
+
+}
+
+

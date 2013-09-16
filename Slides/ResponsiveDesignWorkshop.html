@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive Design Workshop ~ Girl Develop IT</title>
+
+  <meta name="description" content="This is the beta version of the Responsive Design Workshop by Nicole Exel for Girl Develop IT.
+
+  The workshop is meant to be taught in a 3-4 hour session.">
+  <meta name="author" content="Girl Develop It">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="stylesheet" href="reveal/css/reveal.css">
+  <link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+  <!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+
+  <!-- If use the PDF print sheet so students can print slides-->
+
+  <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+       <!-- Opening slide -->
+       <!-- WiFi Info -->
+       <section>
+        <h3>Set up your computer for today</h3>
+        <p><strong>Wifi Network:</strong> atomic-detroit-public</p>
+        <p><strong>Password:</strong> atomic-public</p><br />
+        <p  style="font-size: .75em;"><strong>Download slides and exercise files here: <a href="http://gopixelsgo.com/girldevelopit/" target="_blank">http://gopixelsgo.com/girldevelopit/</a></strong></p>
+        <p style="font-size: .75em;">Install <strong>Google Chrome</strong>, if you dont' have it already.</p>
+        <p class="blue"  style="font-size: .75em;"><a href="http://google.com/chrome" target="_blank">http://google.com/chrome</a></p>
+        <p style="font-size: .75em;">Feel free to use whatever text editor you like.<br/>Today we're using <strong>SublimeText2:</strong></p>
+        <p class="blue"  style="font-size: .75em;"><a href="http://sublimetext.com/2" target="_blank">http://sublimetext.com/2</a></p>
+
+      </section>
+
+      <section>
+        <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
+        <h3>Responsive Design Workshop</h3>
+        
+      </section>
+      <!-- Welcome-->
+      <section>
+        <h3>Welcome!</h3>
+        <div class = "left-align">
+          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+          <p class ="green">Some "rules"</p>
+          <ul>
+            <li>We are here for you!</li>
+            <li>Every question is important</li>
+            <li>Help each other</li>
+            <li>Have fun</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3>Meet Nicole</h3>
+
+        <div class="left" style="width: 100%; font-size: 70%; line-height: 1.2em;">
+          <ul>
+
+            <li class="fragment" style="margin-bottom: 10px;"><span class="green">1997: </span>Graphic design student. Discovered code via AOL while staying up late with my insomniac toddler.</li>
+            <li class="fragment" style="margin-bottom: 10px;"><span class="green">1997-1999: </span>First real graphic design job, boss asked me to put together company website using Adobe PageMill.</li>
+            <li class="fragment" style="margin-bottom: 10px;"><span class="green">2002-today: </span>Made the switch from print design to web design and development, learning much of what I know on the job. Have since worked on websites and apps for Ford, GM, UnitedHealth Group, and now DTE Energy.</li>
+
+            <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/gopixelsgo">@gopixelsgo</a></li>
+            <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:gopixelsgo@gmail.com">gopixelsgo@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </section>
+      <section>
+        <h3>Because Responsive is new-ish and this workshop very new...</h3>
+        <div class = "left-align">
+          <p class = "blue">...what do you hope to get out of it?</p>
+          
+        </div>  
+
+      </section>
+
+
+      <!-- What is Responsive?-->
+
+
+
+
+
+
+      <section>
+        <h3>What is Responsive?</h3>
+        <p>Cutting through the clutter to answer this was a challenge!</p>
+        <p>Because, we have this:</p>
+        <img src = "images/mashable.png" width="450px"> 
+      </section>
+
+      <section>
+        <h3>What is Responsive?</h3>
+        <p>And we have this:</p>
+        <img src = "images/rwd-not-the-future.png" width="600px"> 
+      </section>
+
+      <section>
+        <h3>What is Responsive?</h3>
+        <p>And this</p>
+        <img src = "images/inspire.png" width="600px"> 
+      </section>
+
+      <section>
+        <h3>What is Responsive?</h3>
+        <p>And this</p>
+        <img src = "images/haters.png" width="600px"> 
+      </section>
+
+
+      <section>
+        <h3>What is Responsive?</h3>
+        <p>And criticism and praise times a bazillion:</p>
+        <img src = "images/noise.png" width="900px"> 
+      </section>
+
+      <section>
+        <h3>So really, what is Responsive?</h3>
+        <h4>Responsive design is responsible design.</h4>
+        <div style="float: left; width: 60%;"><p style="text-align: left;">It's the theory and practice of crafting websites that allow the user to enjoy its features no matter what device they are viewing it on.</p></div>
+        <div style="float: right; width:40%;"><img src="images/cute.png" width="300px"/></div>
+
+
+      </section>
+
+      <section>
+        <h3>Responsive's roots</h3>
+        <p>Responsive Web Design was first coined by Ethan Marcotte in the <a href="http://alistapart.com/article/responsive-web-design" target="_blank">May 2010 issue of A List Apart</a>.</p>
+        <img src = "images/alistapart.png" width="500px"/>
+      </section>
+      <section>
+        <h3>Responsive's ingredients</h3>
+        <ul><li>flexible foundation</li>
+          <li>fluid grids</li>
+          <li>flexible images</li>
+          <li>CSS3 media queries, an extension of the @media rule</li>
+        </ul>
+      </section>
+
+      <section>
+
+        <h3>Media queries</h3>
+
+        <p>If you've ever created a print stylesheet for a website (media="print") then you're already familiar with the idea of creating a specific stylesheet to come into play under certain conditions.</p>
+      </section>
+      <section> <h3>Media queries</h3>
+
+        <div>Here's the CSS for #header-image</div>
+
+        <p><img src="images/mq-normal-style.png" width="380px"/></p>
+        <div>And here are the media queries that call for the larger image to be used for screens over 1200px wide, and to turn off the header image if the site is printed.</div>
+        <p><img src="images/mq-larger-img.png" height="120px"/><img src="images/mq-print.png" height="120px"/></p>
+
+      </section>
+
+
+      <section>
+
+        <h3>Media Queries is just  CSS for certain situations</h3>
+        <p>Rather than looking for a type of device they look at the capability of the device, and you can use them to check for all kinds of things. </p>
+        <ul>
+          <li>width and height (of the browser window)</li>
+          <li>device width and height</li>
+          <li>orientation – for example is a phone in landscape or portrait mode?</li>
+          <li>resolution</li>
+        </ul>
+      </section>
+
+      <section> 
+        <h3>Let's look at our Media Queries</h3>
+
+        <div>We can make a few small changes right now to see what this does.</div><br/>
+
+       <p>We've got 2 folders. We'll be working from the "responsivized-website" folder.</p>
+        <img src="images/folders.png"/>
+
+      </section>
+
+      <section>
+        <h3>Examples of Responsive websites</h3>
+        <p>If we visit these sites and "right-click - inspect" them, you'll see their media queries in action.</p>
+        <ul>
+
+          <li style="font-size: 1em;"><a href="http://createdm.com/" target="_blank">http://createdm.com</a></li>
+
+          <li style="font-size: 1em;"><a href="http://stuffandnonsense.co.uk/" target="_blank">http://stuffandnonsense.co.uk</a></li>
+
+          <li style="font-size: 1em;"><a href="http://www.starbucks.com/" target="_blank">http://www.starbucks.com/</a><br/><span style="font-size: .75em;">And speaking of which, Starbucks gets bonus points for documenting and sharing their styleguide here: <a href="http://www.starbucks.com/static/reference/styleguide/" target="_blank">http://www.starbucks.com/static/reference/styleguide/</a></span></li>
+
+        </ul>
+
+      </section>
+
+      <section>
+        <h3>The Responsinator!</h3>
+        <p>To mimick device breakpoints, you can resize the browser window manually.</p> <p>Or you can use one of many emulators like <a href="http://responsinator.com/" target="_blank">The Responsinator.</a></p>
+      </section>
+
+      <section>
+        <h3>A missed Responsive opportunity</h3>
+        <p>This makes me sad, you guys! The Henry Ford is a museum that houses some this country's most significant innovations. Their website underwent a much-needed redesign, but they forgot something.</p>
+        <p><a href="http://thehenryford.org/" target="_blank">http://thehenryford.org/</p>
+        <p>Let's <a href="http://responsinator.com/?url=http%3A%2F%2Fthehenryford.org%2F" target="_blank">see how it looks in Responsinator</a>.</p>
+
+      </section>
+
+      <section>
+        <h3>Before I forget!</h3>
+        <h4>There one more thing Responsive is: <a href="https://twitter.com/perttutolvanen/status/346976707779125248" target="_blank">Disruptive</a></h4>
+        <p>Before you can embrace Responsive, you have to update your processes. It also means educating clients and (for some) resetting their expectation that websites should look the same in every browser, on every device.</p>
+      </section>
+
+      <section>
+        <h3>In support of Responsive</h3>
+        <p>Lots of wireframing software such as <a href="http://support.balsamiq.com/customer/portal/articles/615901-responsive-design-with-mockups" target="_blank">Balsamiq</a> now offer a plethora of responsive-capable tools.</p>
+        <a href="http://support.balsamiq.com/customer/portal/articles/615901-responsive-design-with-mockups" target="_blank"><img src="images/balsamiq.png" width="700px"/></a>
+
+      </section>
+
+      <section>
+        <h3>In support of Responsive</h3>
+        <div style="float: left; width: 50%;"><p>New ways of presenting designs are also popping up, such as <a href="http://styletil.es/" target="_blank">Style Tiles</a>. The mockup below was turned into the website on the right.</p>
+          <img src="images/styletiles1.jpg" width="300px"/></div>
+
+          <div style="float: right; width: 50%;"> <img src="images/styletiles3.jpg" width="350px"/></div>
+        </section>
+        <section>
+          <h3>One web, for the love of humanity!</h3>
+          <p>This is the idea that there shouldn't be a mobile web and a tablet web and desktop web. We should assume that people will try to view a website on whatever device they have with them.</p><p>Our users love their devices, and it's not their fault they've been given 1 billion  to choose from!</p>
+          <img src="images/oneweb.jpg" width="400px"/>
+        </section>
+
+        <section>
+          <h3>(Almost) 1 billion devices</h3>
+          
+          <img src = "images/android-devices.png" width="700px"><p style="float: right; font-size: .75em;">(these are just Android phone, tablets, phablets. <a href="http://i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/" target="_blank">Here are the rest</a>.)</p> <img src = "images/scream.jpg" width="200px">
+        </section>
+
+        <section>
+          <h3>A seamless web</h3>
+          <p>Browsers like Chrome and Safari know that people want seamless web browsing experiences. Browse or bookmark something on your mobile phone, get home and view it on your desktop browser.</p>
+          
+          <img src = "images/chrome-home.png" height="250px"><img src = "images/safari-home.png" height="250px">
+        </section>
+
+
+
+
+
+        <section>
+          <h3>Which browsers support media queries?</h3>
+          <p>The current versions of all major browsers support media queries. There will always be someone who is, for whatever reason, using an ancient browser.</p><p>Some examples:</p>
+          <ul><li>Internet Explorer 7 (3 versions back)</li>
+            <li>Internet Explorer 8 (2 versions back)</li>
+            <li>Safari 3.2 (4 versions back)</li>
+          </ul>
+          <p>A complete list of media query support:<a href="http://caniuse.com/css-mediaqueries" target="_blank">http://caniuse.com/css-mediaqueries</a></p>
+        </section>
+
+        <section>
+          <h3>What if I need my site to be responsive in an old browser?</h3>
+          <p>The best we can do for now is implement some sorcery using polyfills like these:</p>
+          <ul><li><a href="http://modernizr.com/" target="_blank">Modernizr</a></li>
+            <li><a href="https://github.com/scottjehl/Respond" target="_blank">Respond.js</a></li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h3>Responsive vs. Adaptive</h3>
+          <p>Are these things archenemies? Cousins? They both respond and adapt, right? </p>
+
+          
+          <img src = "images/rwd-vs-awd.jpg" width="300px">
+        </section>
+
+
+        <section>
+          <h3>Responsive vs. Adaptive</h3>
+          <h4>Nope, not the same! Here are the differences:</h4>
+          <p><strong>Responsive</strong> is more about content that fluidly changes and responds to fit any screen or device size.</p>
+
+          <br/>
+          <p><strong>Adaptive</strong> is more about progressive enhancement as a best practice, with accessibility at its core.</p>
+          <ul><li>Content layer = rich semantic HTML markup
+          </li>
+          <li>Presentation layer = CSS and styling</li>
+          <li>Client-side scripting layer = JavaScript or jQuery behaviors</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Responsive + Adaptive</h3>
+        <h4>Turns out, these can (and should) coexist.</h4>
+        <p>They go pretty good together, actually. They're fighting the good fight. :-)</p>
+
+        <img src = "images/pbj.png" width="300px">
+
+
+      </section>
+
+      <section>
+        <h3>And then what about "Mobile First"?</h3>
+        <p>Google it and it probably has <a href="http://www.lukew.com/" target="_blank">Luke Wroblewski's</a> name attached to it.</p><p>What it means is, instead of offering "lighter" content or a seemingly restrictive experience to those viewing your site on a mobile device, stop. Regroup. Plan your site out thoughtfully enough that your content is already concise and simplified to begin with. Thinking "Mobile First" helps you accomplish this while you transition to Responsive Design.</p>
+
+      </section>
+
+
+
+      <section>
+        <h3>What is Responsive NOT?</h3>
+
+        <p>Responsive is not a fad, as it addresses a real need for planning our sites thoughtfully.</p>
+        <img src="images/furby.jpg"/>
+      </section>
+
+      <section>
+        <h3>What is Responsive NOT?</h3>
+
+        <p>Responsive is not a replacement for mobile apps. Responsive can save companies time and money by allowing for the development and maintenance of one set of code, but only if it's the appropriate solution.</p><p>Here's what Target is currently doing:</p>
+        <img src="images/target01.png" width="200px"/>
+        <img src="images/target5.png" width="200px"/><img src="images/target03.png" width="200px"/><img src="images/target04.png" width="200px"/>
+      </section>
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+      <!-- Break -->
+      <section>
+        <h3>Questions? Break time?</h3>
+        <p>Grab a snack! Coding is next!</p>
+        <img src="images/t-rex_chips.jpg" alt="nommmms!" width="550px" />
+        
+      </section>
+
+
+      <!-- Coding  -->
+      <section>
+        <h3>Ready to code?</h3>
+        <p>Let's code! We're going to turn this simple, fixed-width website into a responsive one.</p>
+        <img src="images/our-site.png"/>
+      </section>
+
+
+      <section>
+        <h3>Exercise Files</h3>
+        <p>Let's go back to our "responsivized-website" folder.</p>
+        <img src="images/folders.png"/>
+      </section>
+
+
+      <section>
+        <h3>Editing, Previewing, Tweaking</h3>
+        <p>As we add to mediaqueries.css, we'll have to keep going back and checking index.html in the browser. Revise. Refresh. Repeat.</p>
+      </section>
+
+
+
+      <!-- [start] Starting from scratch -->
+
+      <section>
+        <h3>Starting from scratch: Framework</h3>
+        <p>Maybe it turns out you've got a site that's going to be a bit more complex, or you just want to start with a clean slate. Here's where Responsive Frameworks come in. Here are a few. You may have to try out a few to find one that fits your needs. </p>
+        <ul>
+          <li><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></li>
+          <li><a href="http://www.getskeleton.com/" target="_blank">Skeleton</a></li>
+          <li><a href="http://gumbyframework.com/" target="_blank">Gumby</a></li>
+          <li><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a></li>
+        </section>
+
+        <section>
+          <h3>I pick frameworks same way I choose wine: prettiest label.</h3>
+          <p>Kidding. But I really did want to check out Foundation, so let's <a href="http://foundation.zurb.com/" target="_blank">go there and download it</a>.</p>
+          <img src="images/foundation.png" width="700px"/>
+        </section>
+
+        <section>
+          <h3>Frameworks give us: The Grid</h3>
+          <p>This is simply a 12-column flexible grid that can scale out to an arbitrary size (defined by the max-width of the row) that's easily nested.</p>
+          <img src="images/grid.png" width="700px"/>
+        </section>
+
+
+        <section>
+          <h3>Frameworks give us: The Grid</h3>
+          <p>Some examples of grids configurations.</p>
+          <img src="images/all-grids.png" width="800px"/>
+        </section>
+
+        <section>
+          <h3>Exploring The Grid</h3>
+          <p>Let's take a look at what we downloaded from Foundation and see what we can do!</p>
+        </section>
+
+        <!--  Testing/Emulators  -->
+        <section>
+          <h3>Testing Your Responsive Website</h3>
+          <p>The best test is to use the actual device. Super impractical unless you have access to a device lab.</p> 
+          <p>One alternative is to use an emulator like <a href="https://developer.apple.com/xcode/" target="_blank">Xcode</a>, for testing on iOS devices (kind of a huge file to download - 1.65GB).</p><p>Other options:</p>
+          <ul>
+            <li><a href="http://www.browserstack.com/responsive" target="_blank">http://www.browserstack.com/responsive</a></li>
+            <li><a href="http://quirktools.com/screenfly/" target="_blank">http://quirktools.com/screenfly</a></li>
+          </ul>
+        </section>
+
+<!-- Resources -->
+
+<section>
+  <h3>Resources</h3>
+
+<ul>
+  <li>Responsive Patterns:<br/>
+<p><a href="http://bradfrost.github.io/this-is-responsive/patterns.html" target="_blank">http://bradfrost.github.io/this-is-responsive/patterns.html</a></p>
+
+<p><a href="http://mobile.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies/" target="_blank">http://mobile.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies/</a></p>
+
+</li>
+<li>Media Queries<br/>
+<p><a href="http://mediaqueri.es/" target="_blank">http://mediaqueri.es/</a></p>
+</li>
+<li>Responsive Images: <br/>
+<p><a href="http://filamentgroup.com/examples/responsive-images/" target="_blank">http://filamentgroup.com/examples/responsive-images/</a></p></li>
+
+
+
+</section>
+
+<section>
+  <h3>Resources</h3>
+  <ul>
+<li>Making Videos Responsive <br/>
+<p><a href="http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php" target="_blank">http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php</a></p>
+</li>
+
+
+<li>Testing your Responsive Designs<br/>
+  <p>
+<a href="https://developer.apple.com/xcode/" target="_blank">https://developer.apple.com/xcode/ (iOS only)</a></p>
+
+<p><a href="http://www.browserstack.com/responsive" target="_blank">http://www.browserstack.com/responsive</a></p>
+
+<p><a href="http://responsinator.com/" target="_blank">http://responsinator.com/</a></p>
+</li>
+</ul>
+  </section>
+        <!-- End of workshop -->
+        <section>
+          <h3>Questions?</h3>
+          <p>Thanks for Responsivizing with us!</p>
+          <img src="images/t-rex-sparkler.jpg" alt="you did it!" width="350px" />
+          <p>
+            <a href="mailto:gopixelsgo@gmail.com">gopixelsgo@gmail.com</a> Twitter: @gopixelsgo</p>
+          </section>
+
+        </div>
+        <footer>
+          <div class="copyright">
+            Responsive Design Workshop ~ Girl Develop It ~
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+          </div>
+        </footer>
+      </div>
+
+
+      <script src="reveal/lib/js/head.min.js"></script>
+      <script src="reveal/js/reveal.min.js"></script>
+
+      <script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+       { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+       { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+       { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+       { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+       ]
+     });
+
+</script>
+
+</body>
+</html>
